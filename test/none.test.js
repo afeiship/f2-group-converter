@@ -29,7 +29,5 @@ converter.remove('data1');
 
 
 test('docs',()=>{
-  console.log(
-    converter.convert()
-  )
+  converter.convert()
 })

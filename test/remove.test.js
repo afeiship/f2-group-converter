@@ -54,6 +54,7 @@ test('Remove should not have this data key: s1', () => {
   const types = dataRes.map(item => item.type);
 
   expect(types.indexOf('s2')).toBe(-1);
+  expect(converter.dataMapping['s2']).toBeUndefined();
 })
 
 test('remove a data with its group', () => {
@@ -65,6 +66,8 @@ test('remove a data with its group', () => {
   const dataRes = converter.removeMulti(['data2', 'data3']).convert()
   const types = dataRes.map(item => item.type);
 
+  expect(converter.dataMapping['s2']).toBeUndefined();
+  expect(converter.dataMapping['s3']).toBeUndefined();
   expect(types.indexOf('s1')).not.toBe(-1)
   expect(types.indexOf('s4')).not.toBe(1)
   expect(types.indexOf('s2')).toBe(-1);
