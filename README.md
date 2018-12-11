@@ -49,6 +49,8 @@ converter.remove('data1');
 
 //get result:
 converter.convert();
+
+
 // result:
 [{
     year: '1951',
