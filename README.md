@@ -7,6 +7,9 @@
 npm install -S afeiship/f2-group-converter --registry=https://registry.npm.taobao.org
 ```
 
+## apis:
+<img width="500" src="https://ws4.sinaimg.cn/large/006tNbRwgy1fy2othq1hzj30my0nmabn.jpg" />
+
 ## usage:
 ```js
 import F2GroupConverter from './src';
