@@ -33,9 +33,15 @@ const data4 = [
 
 const converter = new F2GroupConverter();
 
+// group1:
 converter.add({ data1,data2 },['data1','data2'])
+
+// group2:
 converter.add({ data3 },['data3']);
+
+//group3:
 converter.add({ data4 },['data4']);
+
 converter.remove('data1');
 
 // result:
